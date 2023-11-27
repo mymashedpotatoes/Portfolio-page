@@ -1,0 +1,161 @@
+:root {
+    --darkgreen: rgb(68, 99, 78);
+    --dark: rgb(48, 48, 48);
+    --light: rgb(156, 156, 156);
+    --blue: rgb(18, 111, 165);
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    background-color: var(--dark);
+    font-size: 130%;
+    justify-content: flex-end;
+    border-style: solid;
+    border-color: var(--blue);
+    padding: 10px;
+}
+
+header{
+    background-image: url("../images/darkbackground.jpg");
+    display: flex;
+    justify-content: space-between;
+    color: var(--light);
+    font-size: 300%;
+}
+
+.sidebar {
+    width: 150px;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    font-size: 200%;
+}
+
+main summary,
+main section {
+    margin-left: 160px;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--light);
+    padding: 10px;
+}
+
+.logo {
+    max-height: 300px;
+    border-radius: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--blue);
+    padding: 10px;
+    background-color: var(--light);
+}
+
+.navbar {
+    align-items: center;
+    font-size: large;
+}
+h2 {
+    text-align: left;
+}
+
+.navlinks {
+   list-style-type: none;
+   display: flex;
+   padding-left: 450px;
+}
+
+.nav-items {
+    padding:  30px;
+    color: var(--light);
+    
+}
+
+.bigpicture {
+    max-width: 60%;
+    height: auto;
+    opacity: 0.6;
+    border: 8px;
+    border-style: solid;
+    border-color: var(--blue);
+    border-radius: 20px;
+}
+
+.text {
+    color: var(--blue);
+    bottom: 10%;
+    right: 80%;
+    font-size: 150%;
+    padding: 10px;
+}
+
+.small-pics {
+    display: inline-block;
+    width: 30%;
+    border: 8px;
+    border-color: aquamarine;
+    opacity: 0.6;
+    border-style: solid;
+    border-color: var(--blue);
+    border-radius: 20px;
+}
+
+.small-pics:hover {
+    opacity: 1;
+}
+.bigpicture:hover {
+    opacity: 1;
+}
+
+section h2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+section li {
+    display: inline;
+}
+section li a {
+    font-size: 100%;
+    color: var(--dark);
+}
+footer{
+    text-align: center;
+    background-color: var(--light);
+    justify-content: center;
+    padding: 40px;
+}
+
+@media screen and (max-width:992){
+    main div {
+        width: 33%;
+        height: auto;
+        font-size: 50%;
+    }
+    .text {
+        font-size: 50%;
+    }
+}
+@media screen and (max-width:768){
+    main div {
+        width: 50%;
+        height: auto;
+    }
+    .text {
+        font-size: 50%;
+    }
+    .navbar {
+        width: 20%;
+    }
+    img {
+        width: 30%;
+    }
+}
