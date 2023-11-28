@@ -30,16 +30,7 @@ header{
 
 .sidebar {
     width: 150px;
-    position: absolute;
-    left: 0;
-    height: 100%;
-    font-size: 200%;
-}
-
-main summary,
-main section {
-    margin-left: 160px;
-
+    font-size: 32px;
 }
 
 main {
@@ -48,7 +39,11 @@ main {
     background-color: var(--light);
     padding: 10px;
 }
-
+.section-container {
+    gap: 30px;
+    display: flex;
+    width: 100%;
+}
 .logo {
     max-height: 300px;
     border-radius: 20px;
@@ -98,8 +93,8 @@ h2 {
 }
 
 .small-pics {
-    display: inline-block;
-    width: 30%;
+    flex: 0 0 300px;
+    max-width: 30%;
     border: 8px;
     border-color: aquamarine;
     opacity: 0.6;
@@ -124,7 +119,7 @@ section li {
     display: inline;
 }
 section li a {
-    font-size: 100%;
+    font-size: 25px;
     color: var(--dark);
 }
 footer{
@@ -143,6 +138,10 @@ footer{
     .text {
         font-size: 50%;
     }
+
+    nav {
+        width: 50%;
+    }
 }
 @media screen and (max-width:768){
     main div {
@@ -158,4 +157,7 @@ footer{
     img {
         width: 30%;
     }
+     nav {
+        width: 30%;
+     }
 }
