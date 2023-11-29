@@ -7,5 +7,6 @@ Link to deployed application:
 https://mymashedpotatoes.github.io/Portfolio-page/
 
 Some screenshots:
-![Screenshot 2023-11-27 222647](https://github.com/mymashedpotatoes/Portfolio-page/assets/145066673/edd34eaf-42fb-4a42-9111-17af19efba67)
-![Screenshot 2023-11-27 222651](https://github.com/mymashedpotatoes/Portfolio-page/assets/145066673/11d78198-192d-43c0-adbf-a6477d517fd6)
+![Screenshot 2023-11-29 132223](https://github.com/mymashedpotatoes/Portfolio-page/assets/145066673/457c454a-4039-4e3d-b308-3f531c78ebae)
+![Screenshot 2023-11-29 132225](https://github.com/mymashedpotatoes/Portfolio-page/assets/145066673/fea013a6-0bbc-4cc7-af5a-695e66fe3e36)
+![Screenshot 2023-11-29 132230](https://github.com/mymashedpotatoes/Portfolio-page/assets/145066673/052f8b8e-5fe0-4d51-b1d2-2a85a37fb442)
