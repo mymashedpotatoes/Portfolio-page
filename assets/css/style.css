@@ -1,106 +1,83 @@
 :root {
-    --darkgreen: rgb(68, 99, 78);
-    --dark: rgb(48, 48, 48);
-    --light: rgb(156, 156, 156);
-    --blue: rgb(18, 111, 165);
+    --pink: rgb(255, 222, 227);
 }
 
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-nav {
-    width: 100%;
-    display: flex;
-    background-color: var(--dark);
-    font-size: 130%;
-    justify-content: flex-end;
-    border-style: solid;
-    border-color: var(--blue);
-    padding: 10px;
+h1 {
+    font-size: 100%;
+
 }
 
 header{
     background-image: url("../images/darkbackground.jpg");
     display: flex;
     justify-content: space-between;
-    color: var(--light);
+    color: var(--pink);
     font-size: 300%;
 }
 
-.sidebar {
-    width: 150px;
-    font-size: 32px;
+p {
+    width: 100%;
+    text-align: center;
+    font-size: 130%;
+    padding: 5%;
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: var(--light);
-    padding: 10px;
+    background-color: gray;
 }
-.section-container {
-    gap: 30px;
-    display: flex;
+
+nav {
     width: 100%;
-}
-.logo {
-    max-height: 300px;
-    border-radius: 20px;
-    border-width: 10px;
+    display: flex;
+    background-color: rgb(77, 77, 77);
+    font-size: 130%;
+    justify-content: flex-end;
     border-style: solid;
-    border-color: var(--blue);
+    border-color: black;
     padding: 10px;
-    background-color: var(--light);
 }
 
 .navbar {
     align-items: center;
     font-size: large;
 }
-h2 {
-    text-align: left;
-}
 
 .navlinks {
-   list-style-type: none;
-   display: flex;
-   padding-left: 450px;
+    list-style-type: none;
+    display: flex;
+    padding-left: 450px;
 }
-
+ 
 .nav-items {
     padding:  30px;
-    color: var(--light);
-    
+    color: var(--pink);
+     
 }
 
 .bigpicture {
-    max-width: 60%;
+    width: 100%;
     height: auto;
+    border: 10% var(--pink);
+    border-style: double;
     opacity: 0.6;
-    border: 8px;
-    border-style: solid;
-    border-color: var(--blue);
-    border-radius: 20px;
-}
 
-.text {
-    color: var(--blue);
-    bottom: 10%;
-    right: 80%;
-    font-size: 150%;
-    padding: 10px;
 }
 
 .small-pics {
-    flex: 0 0 300px;
-    max-width: 30%;
-    border: 8px;
-    border-color: aquamarine;
+    width: 100%;
+    height: auto;
+    border: 10% var(--pink);
+    border-style: double;
     opacity: 0.6;
-    border-style: solid;
-    border-color: var(--blue);
-    border-radius: 20px;
 }
 
 .small-pics:hover {
@@ -110,54 +87,77 @@ h2 {
     opacity: 1;
 }
 
-section h2 {
+.text {
+    font-size: 1rem;
+    line-height: 2;
+    padding: 0 1rem;
+    height: 2rem;
+    margin-top: -2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.788);
+    position: relative;
+}
+
+.row {
     display: flex;
-    justify-content: flex-start;
-}
-
-section li {
-    display: inline;
-}
-section li a {
-    font-size: 25px;
-    color: var(--dark);
-}
-footer{
-    text-align: center;
-    background-color: var(--light);
+    flex-wrap: wrap;
+    padding: 10px;
     justify-content: center;
-    padding: 40px;
 }
 
-@media screen and (max-width:992){
-    main div {
-        width: 33%;
-        height: auto;
-        font-size: 50%;
-    }
-    .text {
-        font-size: 50%;
-    }
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
 
-    nav {
-        width: 50%;
-    }
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
-@media screen and (max-width:768){
-    main div {
-        width: 50%;
-        height: auto;
-    }
-    .text {
-        font-size: 50%;
-    }
-    .navbar {
-        width: 20%;
-    }
-    img {
-        width: 30%;
-    }
-     nav {
-        width: 30%;
-     }
+
+.logo {
+    width: 20%;
+    height: auto;
+    border: 10%;
+    border-color: pink;
+    border-style: double;
+
 }
+.sidebar {
+    width: 40%;
+    font-size: 200%;
+    background-color: var(--pink);
+    
+}
+
+.port-container {
+    gap: 2%;
+    display: flex;
+    width: 100%;
+}
+
+.contactInfo {
+    font-size: 130%;
+}
+
+footer{
+    background-color: gray;
+}
+
+/* makes 2 columns */
+@media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+ /* makes 1 column */
+  @media screen and (max-width: 768px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
